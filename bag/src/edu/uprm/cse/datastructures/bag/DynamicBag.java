@@ -5,6 +5,7 @@ public class DynamicBag implements Bag{
     private Object[] elements;
     private int currentSize;
     private static final int DEFAULT_SIZE = 10;
+    
     public DynamicBag(int initialSize) {
             if (initialSize < 1) {
                     throw new IllegalArgumentException("Size must be at least 1");
